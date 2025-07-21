@@ -30,6 +30,7 @@ const TransactionsPageContent = () => {
         </Typography>
         <AddTransactionDialogButton />
       </Box>
+      {/* TODO add skeleton!! */}
       <TransactionTable transactions={transactions || []} />
       <AddTransactionDialogContainer onAddTransaction={handlePost} />
     </Box>
