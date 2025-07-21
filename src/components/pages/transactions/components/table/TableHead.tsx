@@ -3,7 +3,7 @@
 import { TableCell, TableHead, TableRow } from '@mui/material';
 import { ArrowDownward, ArrowUpward } from '@mui/icons-material';
 import { Transaction } from '@models/interfaces/transactions';
-import { useTransactionSortStore } from '../../hooks/transactionSortStore';
+import { useTransactionSortStore } from '../../hooks/useTransactionSortStore';
 
 export function TransactionTableHead() {
   const { requestSort, sortConfig } = useTransactionSortStore();

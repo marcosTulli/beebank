@@ -3,8 +3,8 @@
 import { useMemo } from 'react';
 import { parseISO } from 'date-fns';
 import { Transaction } from '@/models/interfaces/transactions';
-import { useTransactionFilterStore } from './transactionFilterStore';
-import { useTransactionSortStore } from './transactionSortStore';
+import { useTransactionFilterStore } from './useTransactionFilterStore';
+import { useTransactionSortStore } from './useTransactionSortStore';
 import useGetTransactions from '@/hooks/transactions/useGetTransactions';
 
 export const useTransactions = () => {

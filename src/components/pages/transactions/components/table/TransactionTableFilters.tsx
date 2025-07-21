@@ -1,7 +1,7 @@
 import { Box, TextField, InputAdornment } from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { Search } from '@mui/icons-material';
-import { useTransactionFilterStore } from '../../hooks/transactionFilterStore';
+import { useTransactionFilterStore } from '../../hooks/useTransactionFilterStore';
 
 export function TransactionTableFilters() {
   const {

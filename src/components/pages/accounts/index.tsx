@@ -6,6 +6,7 @@ import { Account } from '@/models/interfaces/accounts';
 import accountsData from './accounts.json';
 
 export function AccountGrid() {
+  // TODO Create endpoint and service for accounts
   const accounts: Account[] = accountsData.accounts;
 
   return (

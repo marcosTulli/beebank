@@ -6,7 +6,6 @@ import {
   CardContent,
   Typography,
   useTheme,
-  Box,
 } from '@mui/material';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
@@ -16,6 +15,7 @@ interface AccountCardProps {
   account: Account;
 }
 
+// TODO break this
 export function AccountCard({ account }: AccountCardProps) {
   const theme = useTheme();
 
@@ -25,14 +25,10 @@ export function AccountCard({ account }: AccountCardProps) {
   return (
     <Card
       sx={{
-        cursor: 'pointer',
         transition: 'all 0.2s',
         border: 2,
         borderColor: theme.palette.divider,
         boxShadow: 1,
-        '&:hover': {
-          boxShadow: 6,
-        },
       }}
     >
       <CardHeader
