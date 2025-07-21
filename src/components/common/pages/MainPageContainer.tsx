@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import type React from "react";
-import { useAppTheme, useSidebar } from "@/hooks/ui";
-import { Main } from "../main";
-import { layoutConfig } from "@components/common/app-layout/config/layoutConfig";
+import type React from 'react';
+import { useAppTheme, useSidebar } from '@/hooks/ui';
+import { Main } from '../main';
+import { layoutConfig } from '@components/common/app-layout/config/layoutConfig';
 
 export function MainPageContainer({ children }: { children: React.ReactNode }) {
   const { isSideBarOpen } = useSidebar();

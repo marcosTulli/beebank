@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import type React from "react";
-import Link from "next/link";
+import type React from 'react';
+import Link from 'next/link';
 import {
   ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
-} from "@mui/material";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { useAppTheme, useSidebar } from "@hooks/ui";
+} from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useAppTheme, useSidebar } from '@hooks/ui';
 
 interface SidebarItemProps {
   text: string;
@@ -28,26 +28,26 @@ export function NavigationItem({ text, href, icon, isOpen }: SidebarItemProps) {
   };
 
   return (
-    <ListItem disablePadding sx={{ display: "block" }}>
+    <ListItem disablePadding sx={{ display: 'block' }}>
       <Link href={href} passHref legacyBehavior>
         <ListItemButton
           onClick={handleClick}
           sx={{
             minHeight: 48,
-            justifyContent: "initial",
+            justifyContent: 'initial',
             px: 2.5,
-            color: "secondary.main",
-            display: "flex",
-            alignItems: "center",
-            whiteSpace: "nowrap",
+            color: 'secondary.main',
+            display: 'flex',
+            alignItems: 'center',
+            whiteSpace: 'nowrap',
           }}
         >
           <ListItemIcon
             sx={{
               minWidth: 0,
-              mr: isOpen ? 3 : "auto",
-              justifyContent: "center",
-              color: "secondary.main",
+              mr: isOpen ? 3 : 'auto',
+              justifyContent: 'center',
+              color: 'secondary.main',
             }}
           >
             {icon}

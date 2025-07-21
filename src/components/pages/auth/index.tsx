@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import { useAuthHandler } from "@components/pages/auth/hooks/useAuthHandler";
-import { Box, Tabs } from "@mui/material";
-import React from "react";
-import useAccessType from "./hooks/useAccessType";
-import AccessTabs from "./components/AccessTabs";
-import AuthFormContainer from "./components/AuthFormContainer";
-import CardTitle from "./components/CardTitle";
-import CardContainer from "@/components/common/card";
-import { AccessTypes } from "@/models/enums";
-import { tabs } from "./config/tabs";
+import { useAuthHandler } from '@components/pages/auth/hooks/useAuthHandler';
+import { Box, Tabs } from '@mui/material';
+import React from 'react';
+import useAccessType from './hooks/useAccessType';
+import AccessTabs from './components/AccessTabs';
+import AuthFormContainer from './components/AuthFormContainer';
+import CardTitle from './components/CardTitle';
+import CardContainer from '@/components/common/card';
+import { AccessTypes } from '@/models/enums';
+import { tabs } from './config/tabs';
 
-const tabIdPrefix = "auth-tab";
+const tabIdPrefix = 'auth-tab';
 
 const AuthPageComponent = () => {
   const { mode, setMode } = useAccessType();
@@ -43,7 +43,7 @@ const AuthPageComponent = () => {
               error={error}
               onSubmit={handleSubmit}
             />
-          ) : null
+          ) : null,
         )}
       </Box>
     </CardContainer>

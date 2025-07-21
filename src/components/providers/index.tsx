@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import type React from "react";
+import type React from 'react';
 import {
   QueryCache,
   QueryClient,
   QueryClientProvider,
-} from "@tanstack/react-query";
-import { ThemeProvider } from "@mui/material";
-import { useAppTheme } from "@hooks/ui";
+} from '@tanstack/react-query';
+import { ThemeProvider } from '@mui/material';
+import { useAppTheme } from '@hooks/ui';
 
 const queryClient = new QueryClient({
   defaultOptions: {

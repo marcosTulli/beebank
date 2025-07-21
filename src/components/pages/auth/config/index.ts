@@ -1,1 +1,1 @@
-export * from './authFormConfig'
+export * from './authFormConfig';

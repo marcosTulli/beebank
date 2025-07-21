@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Typography } from "@mui/material";
+import React from 'react';
+import { Box, Typography } from '@mui/material';
 
 interface Error {
   message: string;
@@ -19,7 +19,7 @@ const ErrorContainer: React.FC<ErrorContainerProps> = ({ error }) => {
           aria-live="assertive"
           variant="body2"
         >
-          {error.message || "Authorization failed"}
+          {error.message || 'Authorization failed'}
         </Typography>
       )}
     </Box>

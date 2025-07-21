@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useUser } from "@hooks/auth";
-import { Routes } from "@models/enums";
-import { Box, CircularProgress } from "@mui/material";
-import React from "react";
+import { useUser } from '@hooks/auth';
+import { Routes } from '@models/enums';
+import { Box, CircularProgress } from '@mui/material';
+import React from 'react';
 
 type ProtectedPageProps = {
   children: React.ReactNode;
@@ -20,10 +20,10 @@ export function ProtectedPage({
     return (
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
         }}
       >
         <CircularProgress size={48} />
@@ -36,7 +36,7 @@ export function ProtectedPage({
   }
 
   return (
-    <Box sx={{ p: 3, bgcolor: "background.default", color: "secondary.main" }}>
+    <Box sx={{ p: 3, bgcolor: 'background.default', color: 'secondary.main' }}>
       {children}
     </Box>
   );

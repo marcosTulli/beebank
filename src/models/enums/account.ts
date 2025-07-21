@@ -1,5 +1,5 @@
-export enum Accounts { 
-    Current='current',
-    Checking='checking',
-    Savings='savings'
+export enum Accounts {
+  Current = 'current',
+  Checking = 'checking',
+  Savings = 'savings',
 }

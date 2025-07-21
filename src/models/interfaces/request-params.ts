@@ -10,7 +10,6 @@ export interface GetRequestParams extends BaseRequestParams {
   url: string;
 }
 
-
 export interface PostRequestParams extends BaseRequestParams {
   body: unknown;
 }

@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import type React from "react";
-import List from "@mui/material/List";
-import { useSidebar } from "@/hooks/ui";
-import { Drawer } from "../drawer";
-import { navigationItems } from "./config/navigation";
-import { NavigationItem } from "./NavigationItem";
-import { SidebarContainer } from "./SidebarContainer";
-import { layoutConfig } from "@components/common/app-layout/config/layoutConfig";
+import type React from 'react';
+import List from '@mui/material/List';
+import { useSidebar } from '@/hooks/ui';
+import { Drawer } from '../drawer';
+import { navigationItems } from './config/navigation';
+import { NavigationItem } from './NavigationItem';
+import { SidebarContainer } from './SidebarContainer';
+import { layoutConfig } from '@components/common/app-layout/config/layoutConfig';
 
 export function Sidebar() {
   const { isSideBarOpen } = useSidebar();
@@ -22,7 +22,7 @@ export function Sidebar() {
       open={isSideBarOpen}
     >
       <SidebarContainer>
-        <List sx={{ width: "100%" }}>
+        <List sx={{ width: '100%' }}>
           {navigationItems.map((item) => (
             <NavigationItem
               href={item.href}

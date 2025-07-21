@@ -1,9 +1,10 @@
-import { sidebarStore } from '@/store/ui'
+import { sidebarStore } from '@/store/ui';
 
 export const useSidebar = () => {
-    const {isSideBarOpen, setSideBarOpen, toggleSideBar} = sidebarStore()
-  return { 
-    isSideBarOpen, setSideBarOpen, toggleSideBar
-   }
-}
-
+  const { isSideBarOpen, setSideBarOpen, toggleSideBar } = sidebarStore();
+  return {
+    isSideBarOpen,
+    setSideBarOpen,
+    toggleSideBar,
+  };
+};

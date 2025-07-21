@@ -1,8 +1,8 @@
-import type React from "react";
-import { CssBaseline } from "@mui/material";
-import "../app/globals.css";
-import { Providers } from "@components/providers";
-import { AppLayout } from "@/components/common/app-layout";
+import type React from 'react';
+import { CssBaseline } from '@mui/material';
+import '../app/globals.css';
+import { Providers } from '@components/providers';
+import { AppLayout } from '@/components/common/app-layout';
 
 export default function RootLayout({
   children,

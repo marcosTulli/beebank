@@ -1,7 +1,7 @@
-import { Box, TextField, InputAdornment } from "@mui/material";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import { Search } from "@mui/icons-material";
-import { useTransactionFilterStore } from "../../hooks/transactionFilterStore";
+import { Box, TextField, InputAdornment } from '@mui/material';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { Search } from '@mui/icons-material';
+import { useTransactionFilterStore } from '../../hooks/transactionFilterStore';
 
 export function TransactionTableFilters() {
   const {
@@ -15,7 +15,7 @@ export function TransactionTableFilters() {
   } = useTransactionFilterStore();
 
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
+    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
       <TextField
         label="Search"
         variant="outlined"
@@ -35,20 +35,20 @@ export function TransactionTableFilters() {
         label="From Date"
         value={dateRange.from}
         onChange={(newDate) => setDateFrom(newDate)}
-        slotProps={{ textField: { variant: "outlined" } }}
+        slotProps={{ textField: { variant: 'outlined' } }}
       />
 
       <DatePicker
         label="To Date"
         value={dateRange.to}
         onChange={(newDate) => setDateTo(newDate)}
-        slotProps={{ textField: { variant: "outlined" } }}
+        slotProps={{ textField: { variant: 'outlined' } }}
       />
 
       <TextField
         type="number"
         label="Min Amount"
-        value={amountRange.min ?? ""}
+        value={amountRange.min ?? ''}
         onChange={(e) =>
           setAmountRange({
             ...amountRange,
@@ -60,7 +60,7 @@ export function TransactionTableFilters() {
       <TextField
         type="number"
         label="Max Amount"
-        value={amountRange.max ?? ""}
+        value={amountRange.max ?? ''}
         onChange={(e) =>
           setAmountRange({
             ...amountRange,

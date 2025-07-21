@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React, { PropsWithChildren } from "react";
-import { Box, Card, CardContent } from "@mui/material";
+import React, { PropsWithChildren } from 'react';
+import { Box, Card, CardContent } from '@mui/material';
 
 const CardContainer: React.FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -19,12 +19,12 @@ const CardContainer: React.FC<PropsWithChildren> = ({ children }) => {
         role="region"
         aria-labelledby="access-card"
         sx={{
-          width: { xs: "90%", sm: 400 },
-          bgcolor: "background.paper",
+          width: { xs: '90%', sm: 400 },
+          bgcolor: 'background.paper',
           minHeight: 500,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
         }}
       >
         <CardContent>{children}</CardContent>

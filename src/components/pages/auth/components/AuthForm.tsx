@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React from "react";
-import { useForm } from "react-hook-form";
-import { Button, TextField, Box } from "@mui/material";
-import { LoginRequest, SignupRequest } from "@models/interfaces/auth";
-import useAuthForm from "../hooks/useAuthForm";
-import { AccessTypes } from "@/models/enums";
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { Button, TextField, Box } from '@mui/material';
+import { LoginRequest, SignupRequest } from '@models/interfaces/auth';
+import useAuthForm from '../hooks/useAuthForm';
+import { AccessTypes } from '@/models/enums';
 
 type FormValues = LoginRequest | SignupRequest;
 
@@ -52,7 +52,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ mode, onSubmit, isLoading }) => {
         disabled={isLoading}
         sx={{ mt: 2 }}
       >
-        {mode === AccessTypes.login ? "Login" : "Sign Up"}
+        {mode === AccessTypes.login ? 'Login' : 'Sign Up'}
       </Button>
     </Box>
   );

@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Tabs, Tab } from "@mui/material";
-import { tabs } from "../config/tabs";
+import React from 'react';
+import { Tabs, Tab } from '@mui/material';
+import { tabs } from '../config/tabs';
 
 interface AccessTabsProps {
   value: string;

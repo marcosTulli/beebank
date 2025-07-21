@@ -1,4 +1,4 @@
-import { AccessTypes } from "@/models/enums";
+import { AccessTypes } from '@/models/enums';
 
 export const tabs = [
   {

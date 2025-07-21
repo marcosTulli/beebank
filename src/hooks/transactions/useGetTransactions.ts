@@ -1,13 +1,15 @@
-'use client'
+'use client';
 
 import { useQuery } from '@tanstack/react-query';
 import { Transaction } from '@/models/interfaces/transactions';
 import { getTransactionsService } from '@/services/transactions';
 
-
-
 const useGetTransactions = () => {
-  const { data: transactions, error, isLoading } = useQuery<Transaction[], Error>({
+  const {
+    data: transactions,
+    error,
+    isLoading,
+  } = useQuery<Transaction[], Error>({
     queryKey: ['transactions'],
     queryFn: getTransactionsService,
   });
@@ -19,6 +21,4 @@ const useGetTransactions = () => {
   };
 };
 
-
-
-export default useGetTransactions
+export default useGetTransactions;

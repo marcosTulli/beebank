@@ -21,28 +21,30 @@ interface TransactionFilterState {
   resetFilters: () => void;
 }
 
-export const useTransactionFilterStore = create<TransactionFilterState>((set) => ({
-  searchTerm: '',
-  dateRange: { from: null, to: null },
-  amountRange: {},
-  setSearchTerm: (term) => set({ searchTerm: term }),
+export const useTransactionFilterStore = create<TransactionFilterState>(
+  (set) => ({
+    searchTerm: '',
+    dateRange: { from: null, to: null },
+    amountRange: {},
+    setSearchTerm: (term) => set({ searchTerm: term }),
 
-  setDateFrom: (from) =>
-    set((state) => ({
-      dateRange: { ...state.dateRange, from },
-    })),
+    setDateFrom: (from) =>
+      set((state) => ({
+        dateRange: { ...state.dateRange, from },
+      })),
 
-  setDateTo: (to) =>
-    set((state) => ({
-      dateRange: { ...state.dateRange, to },
-    })),
+    setDateTo: (to) =>
+      set((state) => ({
+        dateRange: { ...state.dateRange, to },
+      })),
 
-  setAmountRange: (range) => set({ amountRange: range }),
+    setAmountRange: (range) => set({ amountRange: range }),
 
-  resetFilters: () =>
-    set({
-      searchTerm: '',
-      dateRange: { from: null, to: null },
-      amountRange: {},
-    }),
-}));
+    resetFilters: () =>
+      set({
+        searchTerm: '',
+        dateRange: { from: null, to: null },
+        amountRange: {},
+      }),
+  }),
+);

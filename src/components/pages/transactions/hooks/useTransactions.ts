@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
 import { useMemo } from 'react';
-import {  parseISO } from 'date-fns';
+import { parseISO } from 'date-fns';
 import { Transaction } from '@/models/interfaces/transactions';
 import { useTransactionFilterStore } from './transactionFilterStore';
 import { useTransactionSortStore } from './transactionSortStore';
 import useGetTransactions from '@/hooks/transactions/useGetTransactions';
 
 export const useTransactions = () => {
-    const {transactions} = useGetTransactions()
+  const { transactions } = useGetTransactions();
   const { searchTerm, dateRange, amountRange } = useTransactionFilterStore();
   const { sortConfig } = useTransactionSortStore();
 
@@ -37,19 +37,19 @@ export const useTransactions = () => {
         const aVal = a[sortConfig.key];
         const bVal = b[sortConfig.key];
 
-        if (typeof aVal === "string" && typeof bVal === "string") {
-          return sortConfig.direction === "asc"
+        if (typeof aVal === 'string' && typeof bVal === 'string') {
+          return sortConfig.direction === 'asc'
             ? aVal.localeCompare(bVal)
             : bVal.localeCompare(aVal);
         }
-        if (typeof aVal === "number" && typeof bVal === "number") {
-          return sortConfig.direction === "asc" ? aVal - bVal : bVal - aVal;
+        if (typeof aVal === 'number' && typeof bVal === 'number') {
+          return sortConfig.direction === 'asc' ? aVal - bVal : bVal - aVal;
         }
         return 0;
       });
     }
     return filtered;
-  }, [transactions, searchTerm, dateRange, amountRange, sortConfig]); 
-  
-  return {processedTransactions};
+  }, [transactions, searchTerm, dateRange, amountRange, sortConfig]);
+
+  return { processedTransactions };
 };

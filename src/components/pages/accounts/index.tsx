@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
-import React from "react";
+import { Typography } from '@mui/material';
+import React from 'react';
 
 const AccountPageContent = () => {
   return (
-    <Typography variant="h4" gutterBottom sx={{ color: "secondary.main" }}>
+    <Typography variant="h4" gutterBottom sx={{ color: 'secondary.main' }}>
       Accounts Content
     </Typography>
   );

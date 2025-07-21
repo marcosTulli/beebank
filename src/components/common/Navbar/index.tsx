@@ -1,13 +1,13 @@
-"use client";
-import type React from "react";
-import MuiAppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import { ThemePicker } from "@components/common/theme-picker";
-import { useSidebar } from "@/hooks/ui";
-import { layoutConfig } from "@components/common/app-layout/config/layoutConfig";
+'use client';
+import type React from 'react';
+import MuiAppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import { ThemePicker } from '@components/common/theme-picker';
+import { useSidebar } from '@/hooks/ui';
+import { layoutConfig } from '@components/common/app-layout/config/layoutConfig';
 
 export function Navbar() {
   const { toggleSideBar, isSideBarOpen } = useSidebar();
@@ -16,14 +16,14 @@ export function Navbar() {
   return (
     <MuiAppBar
       position="fixed"
-      sx={{ width: "100%", height: topBarHeight, bgcolor: "primary.main" }}
+      sx={{ width: '100%', height: topBarHeight, bgcolor: 'primary.main' }}
     >
       <Toolbar
         sx={{
-          display: "flex",
+          display: 'flex',
           minHeight: topBarHeight,
-          justifyContent: "space-between",
-          alignItems: "center",
+          justifyContent: 'space-between',
+          alignItems: 'center',
         }}
       >
         <IconButton
@@ -31,7 +31,7 @@ export function Navbar() {
           aria-label="toggle sidebar"
           onClick={toggleSideBar}
           edge="start"
-          sx={{ color: "secondary.main" }}
+          sx={{ color: 'secondary.main' }}
         >
           {isSideBarOpen ? <ChevronLeftIcon /> : <ChevronRightIcon />}
         </IconButton>
