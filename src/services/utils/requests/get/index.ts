@@ -1,14 +1,13 @@
 import axios from 'axios';
 import { GetRequestParams } from '@models/interfaces';
 
-const baseUrl = process.env.NEXT_PUBLIC_API_URL || '';
 
 export async function getRequest<T>({
-  location,
   params,
   headers,
+  url
 }: GetRequestParams): Promise<T> {
-  const response = await axios.get(baseUrl + location, {
+  const response = await axios.get(url, {
     params,
     headers,
     paramsSerializer: {

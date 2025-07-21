@@ -1,6 +1,6 @@
 import type React from "react";
 import { CssBaseline } from "@mui/material";
-import "../app/globals.css"; // Import global CSS
+import "../app/globals.css";
 import { Providers } from "@components/providers";
 import { AppLayout } from "@/components/common/app-layout";
 

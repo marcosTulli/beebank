@@ -1,4 +1,4 @@
-export interface ITransaction {
+export interface Transaction {
   id: string
   accountId: string
   date: string 

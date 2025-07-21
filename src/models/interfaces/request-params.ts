@@ -1,11 +1,15 @@
 interface BaseRequestParams {
-  location: string;
+  location?: string;
   params?: Record<string, unknown>;
   headers?: Record<string, string>;
 }
 
-export type GetRequestParams = BaseRequestParams;
 export type DeleteRequestParams = BaseRequestParams;
+
+export interface GetRequestParams extends BaseRequestParams {
+  url: string;
+}
+
 
 export interface PostRequestParams extends BaseRequestParams {
   body: unknown;
