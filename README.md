@@ -2,6 +2,8 @@
 
 A modern, responsive banking frontend application built with Next.js, Material UI, and TypeScript. Features include user authentication, account management, and transaction tracking — all backed by a clean UI and modular architecture.
 
+I spent approximately 5 to 6 hours on this project, focusing on delivering all the required tasks while leaving room for future UI improvements. I also made an effort to modularize the code as much as possible.
+
 ##  Tech Stack
 
 *   Next.js 14
