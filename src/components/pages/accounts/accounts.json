@@ -1,0 +1,32 @@
+{
+  "accounts": [
+    {
+      "id": "acc-001",
+      "name": "Main Checking",
+      "balance": 1250.75,
+      "type": "checking",
+      "accountNumber": "123456789"
+    },
+    {
+      "id": "acc-002",
+      "name": "Savings Account",
+      "balance": 8420.0,
+      "type": "savings",
+      "accountNumber": "987654321"
+    },
+    {
+      "id": "acc-003",
+      "name": "Current Account",
+      "balance": 312.4,
+      "type": "current",
+      "accountNumber": "456789123"
+    },
+    {
+      "id": "acc-004",
+      "name": "Vacation Fund",
+      "balance": 1350.0,
+      "type": "savings",
+      "accountNumber": "112233445"
+    }
+  ]
+}

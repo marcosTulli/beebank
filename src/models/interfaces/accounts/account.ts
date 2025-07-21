@@ -4,6 +4,6 @@ export interface Account {
   id: string;
   name: string;
   balance: number;
-  type: Accounts;
+  type: Accounts | string;
   accountNumber: string;
 }
