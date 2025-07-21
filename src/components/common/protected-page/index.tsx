@@ -35,5 +35,9 @@ export function ProtectedPage({
     return null;
   }
 
-  return <Box padding={2}>{children}</Box>;
+  return (
+    <Box sx={{ p: 3, bgcolor: "background.default", color: "secondary.main" }}>
+      {children}
+    </Box>
+  );
 }
