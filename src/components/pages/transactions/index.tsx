@@ -11,10 +11,12 @@ import { Transaction } from '@/models/interfaces/transactions';
 const TransactionsPageContent = () => {
   const { processedTransactions: transactions } = useTransactions();
 
+  // TODO Add Post service
   const handlePost = (transaction: Transaction) => {
     const message = `Transaction with ammount $ ${transaction.amount} will be added soon...`;
     window.alert(message);
   };
+
   return (
     <Box>
       <Box
