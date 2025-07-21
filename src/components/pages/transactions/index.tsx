@@ -1,6 +1,6 @@
 'use client';
 
-import { TransactionTable } from '@/components/table';
+import { TransactionTable } from '@/components/pages/transactions/components/table';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { useTransactions } from './hooks/useTransactions';
